@@ -2,6 +2,9 @@
     "name": "@kodo/db",
     "version": "1.0.0",
     "private": true,
+    "scripts": {
+        "postinstall": "prisma generate"
+    },
     "main": "./src/index.ts",
     "types": "./src/index.ts",
     "dependencies": {
