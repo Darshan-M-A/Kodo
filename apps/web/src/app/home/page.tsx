@@ -145,8 +145,8 @@ export default async function Home({ searchParams }: { searchParams: { dev?: str
                             <div key={unit.id} className="flex flex-col gap-4 mt-4 mb-8">
                                 <div className="bg-brand-500 text-white rounded-2xl p-5 shadow-lg border-b-4 border-brand-700 flex justify-between items-center z-20 relative">
                                     <div>
-                                        <h2 className="text-2xl font-bold">{stage.title}</h2>
-                                        <p className="text-brand-100 font-medium">Unit {unit.order} • {unit.title}</p>
+                                        <h2 className="text-2xl font-bold">{unit.title}</h2>
+                                        <p className="text-brand-100 font-medium">{stage.title} • Unit {unit.order}</p>
                                     </div>
                                     <div className="flex gap-2 items-center">
                                         {isDevMode && lessons.length > 0 && (
